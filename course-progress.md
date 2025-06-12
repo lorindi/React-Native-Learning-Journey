@@ -6,20 +6,20 @@
 - [x] Lecture 3: Join our Online Learning Community
 - [x] Lecture 4: A Glance Under The Hood Of React Native
 - [x] Lecture 5: Creating React Native Projects: Expo CLI vs React Native CLI
-- [ ] Lecture 6: Creating a New React Native Project
-- [ ] Lecture 7: Analyzing The Created Project
-- [ ] Lecture 8: Running Our First App On A Real Device!
-- [ ] Lecture 9: Setting Up A Local Development Environment
-- [ ] Lecture 10: Course Setup
-- [ ] Lecture 11: About This Course
-- [ ] Section 1 completed
+- [x] Lecture 6: Creating a New React Native Project
+- [x] Lecture 7: Analyzing The Created Project
+- [x] Lecture 8: Running Our First App On A Real Device!
+- [x] Lecture 9: Setting Up A Local Development Environment
+- [x] Lecture 10: Course Setup
+- [x] Lecture 11: About This Course
+- [x] Section 1 completed
 
 ## Section 2: React Native Basics (Course Goals App)
-- [ ] Lecture 13: Module Introduction
-- [ ] Lecture 14: Exploring Core Components & Component Styling
-- [ ] Lecture 15: Working With Core Components
-- [ ] Lecture 16: Styling React Native Apps
-- [ ] Lecture 17: React Native: Core Components, Styling & Colors - More Information
+- [x] Lecture 13: Module Introduction
+- [x] Lecture 14: Exploring Core Components & Component Styling
+- [x] Lecture 15: Working With Core Components
+- [x] Lecture 16: Styling React Native Apps
+- [x] Lecture 17: React Native: Core Components, Styling & Colors - More Information
 - [ ] Lecture 18: Exploring Layouts & Flexbox
 - [ ] Lecture 19: React Native & Flexbox
 - [ ] Lecture 20: Using Flexbox To Create Layouts

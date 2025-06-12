@@ -60,20 +60,46 @@ export default GreetingComponent;
 ## Day 2 - [Date]
 
 ### Today I learned
-- 
-- 
+- What core components in React Native are – View, Text, Button, Image, TextInput
+- How to use inline styles and StyleSheet.create for cleaner and reusable styling
+- The difference between margin and padding, and how they affect layout
+- How to apply colors using color, backgroundColor, and hex/rgb values
+- Basic flexbox layout concepts – flexDirection, justifyContent, alignItems
+
 
 ### Code examples
 ```javascript
-// Code example
+import { StatusBar } from "expo-status-bar";
+import { Button, StyleSheet, Text, View } from "react-native";
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={{margin: 16, borderWidth: 2, borderColor:'blue', padding: 16 }}>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+      <Button title="Tap me!" />
+
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
+
+
 ```
 
 ### Challenges
-- 
-- 
+- I forgot to assign a value to the title prop in Button, which caused a JSX syntax error
 
 ### Solutions
-- 
+- Fixed the JSX error by adding a string in quotes: title="Tap me"
 - 
 
 ### Tomorrow's plan
