@@ -20,12 +20,12 @@
 - [x] Lecture 15: Working With Core Components
 - [x] Lecture 16: Styling React Native Apps
 - [x] Lecture 17: React Native: Core Components, Styling & Colors - More Information
-- [ ] Lecture 18: Exploring Layouts & Flexbox
-- [ ] Lecture 19: React Native & Flexbox
-- [ ] Lecture 20: Using Flexbox To Create Layouts
-- [ ] Lecture 21: Flexbox - A Deep Dive
-- [ ] Quiz 1: Components, Styles, Layouts
-- [ ] Lecture 22: Improving The Layout
+- [x] Lecture 18: Exploring Layouts & Flexbox
+- [x] Lecture 19: React Native & Flexbox
+- [x] Lecture 20: Using Flexbox To Create Layouts
+- [x] Lecture 21: Flexbox - A Deep Dive
+- [x] Quiz 1: Components, Styles, Layouts
+- [x] Lecture 22: Improving The Layout
 - [ ] Lecture 23: Handling Events
 - [ ] Lecture 24: Managing A List Of Course Goals (in our Demo App)
 - [ ] Lecture 25: iOS & Android Styling Differences
