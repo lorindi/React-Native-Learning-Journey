@@ -30,8 +30,8 @@
 - [x] Lecture 24: Managing A List Of Course Goals (in our Demo App)
 - [x] Lecture 25: iOS & Android Styling Differences
 - [x] Lecture 26: Making Content Scrollable with ScrollView
-- [ ] Lecture 27: Optimizing Lists with FlatList
-- [ ] Quiz 2: More Components & Lists
+- [x] Lecture 27: Optimizing Lists with FlatList
+- [x] Quiz 2: More Components & Lists
 - [ ] Lecture 28: Splitting Components Into Smaller Components
 - [ ] Lecture 29: Utilizing Props
 - [ ] Lecture 30: Working on the "Goal Input" Component

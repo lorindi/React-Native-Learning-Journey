@@ -129,6 +129,15 @@ const styles = StyleSheet.create({
 - How to combine ScrollView with Flexbox layouts for flexible screen design
 - That ScrollView renders all items at once, so it’s suitable for small lists only
 - The importance of unique keys when mapping list items to avoid warnings or rendering bugs
+  
+- How to use FlatList for rendering lists more efficiently
+- FlatList renders only visible items for better performance
+- How to provide a data prop with an array of objects
+- How to use renderItem to render each list item
+- How to extract unique keys using keyExtractor
+- Why using unique IDs is better than using array index as key
+- How FlatList automatically handles scrolling and virtualization
+- How to structure list item data with text and id fields
 
 ### Code examples
 ```javascript
@@ -199,6 +208,36 @@ import {
       </View>
 ```
 
+```javascript
+// Replace ScrollView with FlatList for efficient list rendering and better performance
+import { FlatList } from "react-native";
+
+// Define state
+const [courseGoals, setCourseGoals] = useState([]);
+
+// Add new goal with unique id
+function addGoalHandler() {
+  setCourseGoals((currentCourseGoals) => [
+    ...currentCourseGoals,
+    { text: enteredGoalText, id: Math.random().toString() },
+  ]);
+}
+
+// Render FlatList
+<View style={styles.goalsContainer}>
+  <FlatList
+    data={courseGoals}
+    renderItem={(itemData) => (
+      <View style={styles.goalItem}>
+        <Text style={styles.goalText}>{itemData.item.text}</Text>
+      </View>
+    )}
+    keyExtractor={(item, index) => item.id}
+    alwaysBounceVertical={false}
+  />
+</View>
+``` 
+
 ### Challenges
 - Remembering to bind the input handler with onChangeText, not onChange
 - Structuring the layout properly so that input and list sections take up correct proportions of the screen
@@ -208,6 +247,12 @@ import {
 - Some styles looked misaligned when switching between Android and iOS preview
 - Handling scroll behavior to avoid overscroll bounce on iOS
 - Understanding when to use ScrollView vs FlatList for lists
+- Understanding the structure of FlatList’s props
+- Figuring out how renderItem function works
+- Remembering to wrap list item inside itemData.item
+- Making sure each item has a unique key
+- Deciding when to use FlatList vs ScrollView
+- Handling empty input (adding empty goals by mistake)
 
 ### Solutions
 - Reviewed documentation to confirm event names in React Native (onChangeText)
@@ -218,6 +263,12 @@ import {
 - Used additional padding, margin, and borderRadius to achieve consistent visual layout
 - Used alwaysBounceVertical={false} on ScrollView to prevent unwanted bounce on iOS
 - Learned that ScrollView is good for small lists but not optimized for large data sets
+- Read FlatList documentation carefully
+- Practiced writing renderItem as inline arrow function
+- Used itemData.item.text to access goal text
+- Generated unique IDs using Math.random().toString()
+- Used keyExtractor to assign keys properly
+- Added logic to prevent adding empty goals (optional improvement for future)
  
 
 
