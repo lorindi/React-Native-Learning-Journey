@@ -102,10 +102,44 @@ const styles = StyleSheet.create({
 - Fixed the JSX error by adding a string in quotes: title="Tap me"
 - 
 
-### Tomorrow's plan
-- 
-- 
+## Day 3 - [Date]
 
----
+### Today I learned
+- How to handle user input in React Native using the TextInput component
+- How to manage and update component state using the useState hook
+- How to create event handler functions and connect them to UI elements like Button and TextInput
+- The difference between controlled and uncontrolled components in the context of form inputs
+- How to structure nested views for input and output areas using Flexbox
 
-<!-- Continue with this pattern for each day of learning --> 
+### Code examples
+```javascript
+const [enteredGoalText, setEnteredGoalText] = useState("");
+
+function goalInputHandler(enteredText) {
+  setEnteredGoalText(enteredText);
+}
+
+function addGoalHandler() {
+  console.log(enteredGoalText);
+}
+
+<TextInput
+  style={styles.textInput}
+  placeholder="Your course goal"
+  onChangeText={goalInputHandler}
+/>
+<Button title="Add Goal" onPress={addGoalHandler} />
+
+```
+
+### Challenges
+- Remembering to bind the input handler with onChangeText, not onChange
+- Structuring the layout properly so that input and list sections take up correct proportions of the screen
+
+### Solutions
+- Reviewed documentation to confirm event names in React Native (onChangeText)
+- Used Flexbox layout with proportions (flex: 1, flex: 5) to organize screen sections clearly
+ 
+
+
+
