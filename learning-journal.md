@@ -116,6 +116,12 @@ const styles = StyleSheet.create({
 - How to render a list in JSX using map() and keys
 - That nested <Text> elements should be used carefully – it’s better to render lists using FlatList or separate components later
 
+- How to style components in React Native using the StyleSheet API
+- The differences in default styling between iOS and Android (e.g. font rendering, button appearance)
+- How to create custom styles for reusable visual components like goal items
+- How to use margin, padding, borderRadius, and background colors to enhance UI
+- Why some styles behave slightly differently depending on the platform and how to test them on both
+
 ### Code examples
 ```javascript
 
@@ -136,8 +142,9 @@ function addGoalHandler() {
   onChangeText={goalInputHandler}
 />
 <Button title="Add Goal" onPress={addGoalHandler} />
+```
 
-
+```javascript
 // Manage and display a dynamic list of goals using state and map
 const [courseGoals, setCourseGoals] = useState([]);
 
@@ -150,7 +157,21 @@ function addGoalHandler() {
     <Text key={index}>{goal}</Text>
   ))}
 </View>
+```
 
+```javascript
+// Styled goal items for visual consistency across iOS and Android
+const styles = StyleSheet.create({
+  goalItem: {
+    margin: 8,
+    padding: 5,
+    borderRadius: 6,
+    backgroundColor: "#5e0acc",
+  },
+  goalText: {
+    color: "white",
+  },
+});
 
 ```
 
@@ -159,12 +180,17 @@ function addGoalHandler() {
 - Structuring the layout properly so that input and list sections take up correct proportions of the screen
 - Accidentally used old state value instead of functional update in setCourseGoals
 - Got a warning about duplicate keys when using the same goal text
+- Button styles differ across platforms and can’t be fully customized by default
+- Some styles looked misaligned when switching between Android and iOS preview
 
 ### Solutions
 - Reviewed documentation to confirm event names in React Native (onChangeText)
 - Used Flexbox layout with proportions (flex: 1, flex: 5) to organize screen sections clearly
 - Fixed the array update by using the current state as an argument in setCourseGoals
 - Temporarily used the index as a key, with a note to replace it with a unique ID later
+- Created custom View with styled Text for goals instead of styling the Button directly
+- Used additional padding, margin, and borderRadius to achieve consistent visual layout
+- Noted that more customization may require platform-specific code or third-party components later
  
 
 
