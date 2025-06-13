@@ -29,7 +29,7 @@
 - [x] Lecture 23: Handling Events
 - [x] Lecture 24: Managing A List Of Course Goals (in our Demo App)
 - [x] Lecture 25: iOS & Android Styling Differences
-- [ ] Lecture 26: Making Content Scrollable with ScrollView
+- [x] Lecture 26: Making Content Scrollable with ScrollView
 - [ ] Lecture 27: Optimizing Lists with FlatList
 - [ ] Quiz 2: More Components & Lists
 - [ ] Lecture 28: Splitting Components Into Smaller Components

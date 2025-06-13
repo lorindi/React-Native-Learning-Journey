@@ -121,6 +121,14 @@ const styles = StyleSheet.create({
 - How to create custom styles for reusable visual components like goal items
 - How to use margin, padding, borderRadius, and background colors to enhance UI
 - Why some styles behave slightly differently depending on the platform and how to test them on both
+  
+- How to make content scrollable using the ScrollView component
+- The difference between ScrollView and FlatList for rendering lists
+- How to prevent overscroll bounce on iOS with alwaysBounceVertical={false}
+- How to wrap list items inside ScrollView for better UX when many items exist
+- How to combine ScrollView with Flexbox layouts for flexible screen design
+- That ScrollView renders all items at once, so it’s suitable for small lists only
+- The importance of unique keys when mapping list items to avoid warnings or rendering bugs
 
 ### Code examples
 ```javascript
@@ -175,6 +183,22 @@ const styles = StyleSheet.create({
 
 ```
 
+```javascript
+import {
+  ScrollView,
+} from "react-native";
+// Add scrollable list using ScrollView and improve list key handling
+    <View style={styles.goalsContainer}>
+        <ScrollView alwaysBounceVertical={false}>
+          {courseGoals.map((goal, index) => (
+            <View style={styles.goalItem} key={`${index}-${goal}`}>
+              <Text style={styles.goalText}>{goal}</Text>
+            </View>
+          ))}
+        </ScrollView>
+      </View>
+```
+
 ### Challenges
 - Remembering to bind the input handler with onChangeText, not onChange
 - Structuring the layout properly so that input and list sections take up correct proportions of the screen
@@ -182,6 +206,8 @@ const styles = StyleSheet.create({
 - Got a warning about duplicate keys when using the same goal text
 - Button styles differ across platforms and can’t be fully customized by default
 - Some styles looked misaligned when switching between Android and iOS preview
+- Handling scroll behavior to avoid overscroll bounce on iOS
+- Understanding when to use ScrollView vs FlatList for lists
 
 ### Solutions
 - Reviewed documentation to confirm event names in React Native (onChangeText)
@@ -190,7 +216,8 @@ const styles = StyleSheet.create({
 - Temporarily used the index as a key, with a note to replace it with a unique ID later
 - Created custom View with styled Text for goals instead of styling the Button directly
 - Used additional padding, margin, and borderRadius to achieve consistent visual layout
-- Noted that more customization may require platform-specific code or third-party components later
+- Used alwaysBounceVertical={false} on ScrollView to prevent unwanted bounce on iOS
+- Learned that ScrollView is good for small lists but not optimized for large data sets
  
 
 
