@@ -110,9 +110,16 @@ const styles = StyleSheet.create({
 - How to create event handler functions and connect them to UI elements like Button and TextInput
 - The difference between controlled and uncontrolled components in the context of form inputs
 - How to structure nested views for input and output areas using Flexbox
+  
+- How to dynamically manage and render a list of items (goals) using the useState hook
+- How to update arrays in state immutably using the functional form of setState
+- How to render a list in JSX using map() and keys
+- That nested <Text> elements should be used carefully – it’s better to render lists using FlatList or separate components later
 
 ### Code examples
 ```javascript
+
+// Learned how to handle user input and events in React Native using TextInput, useState, and Button components
 const [enteredGoalText, setEnteredGoalText] = useState("");
 
 function goalInputHandler(enteredText) {
@@ -130,15 +137,34 @@ function addGoalHandler() {
 />
 <Button title="Add Goal" onPress={addGoalHandler} />
 
+
+// Manage and display a dynamic list of goals using state and map
+const [courseGoals, setCourseGoals] = useState([]);
+
+function addGoalHandler() {
+  setCourseGoals((currentGoals) => [...currentGoals, enteredGoalText]);
+}
+
+<View style={styles.goalsContainer}>
+  {courseGoals.map((goal, index) => (
+    <Text key={index}>{goal}</Text>
+  ))}
+</View>
+
+
 ```
 
 ### Challenges
 - Remembering to bind the input handler with onChangeText, not onChange
 - Structuring the layout properly so that input and list sections take up correct proportions of the screen
+- Accidentally used old state value instead of functional update in setCourseGoals
+- Got a warning about duplicate keys when using the same goal text
 
 ### Solutions
 - Reviewed documentation to confirm event names in React Native (onChangeText)
 - Used Flexbox layout with proportions (flex: 1, flex: 5) to organize screen sections clearly
+- Fixed the array update by using the current state as an argument in setCourseGoals
+- Temporarily used the index as a key, with a note to replace it with a unique ID later
  
 
 
