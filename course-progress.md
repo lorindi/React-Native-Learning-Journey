@@ -32,9 +32,9 @@
 - [x] Lecture 26: Making Content Scrollable with ScrollView
 - [x] Lecture 27: Optimizing Lists with FlatList
 - [x] Quiz 2: More Components & Lists
-- [ ] Lecture 28: Splitting Components Into Smaller Components
-- [ ] Lecture 29: Utilizing Props
-- [ ] Lecture 30: Working on the "Goal Input" Component
+- [x] Lecture 28: Splitting Components Into Smaller Components
+- [x] Lecture 29: Utilizing Props
+- [x] Lecture 30: Working on the "Goal Input" Component
 - [ ] Lecture 31: Handling Taps with the Pressable Component
 - [ ] Lecture 32: Making Items Deletable & Using IDs
 - [ ] Lecture 33: Adding an Android Ripple Effect & an iOS Alternative

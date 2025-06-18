@@ -273,3 +273,81 @@ function addGoalHandler() {
 
 
 
+## Day 4 - May 18, 2025
+
+### Today I learned
+- How to split the app into reusable components (GoalInput and GoalItem)
+- How to pass props between parent and child components to handle user actions
+- How to lift the state up from GoalInput to the main App component
+- How to reset input fields after submitting user input
+- How to structure the UI using custom components to keep the code clean and readable
+- The importance of assigning unique keys to each item in FlatList
+- How to create a controlled input field using TextInput with a value and onChangeText
+- How to use flexDirection: "row" for horizontal layout in the input field
+- How to style custom components using StyleSheet for better structure and platform consistency
+
+### Code examples
+```javascript
+// GoalInput component: handles user input and calls a callback prop
+function GoalInput(props) {
+  const [enteredGoalText, setEnteredGoalText] = useState("");
+
+  function goalInputHandler(enteredText) {
+    setEnteredGoalText(enteredText);
+  }
+
+  function addGoalHandler() {
+    props.onAddGoal(enteredGoalText);
+    setEnteredGoalText(""); // Clear input after adding
+  }
+
+  return (
+    <View style={styles.inputContainer}>
+      <TextInput
+        style={styles.textInput}
+        placeholder="Your course goal"
+        onChangeText={goalInputHandler}
+        value={enteredGoalText}
+      />
+      <Button title="Add Goal" onPress={addGoalHandler} />
+    </View>
+  );
+}
+
+```
+```javascript
+// GoalItem component: displays each goal as a styled item
+function GoalItem({ itemData }) {
+  return (
+    <View style={styles.goalItem}>
+      <Text style={styles.goalText}>{itemData.item.text}</Text>
+    </View>
+  );
+}
+
+```
+```javascript
+// In App.js: manages state and renders components
+<FlatList
+  data={courseGoals}
+  renderItem={(itemData) => {
+    return <GoalItem itemData={itemData} />;
+  }}
+  keyExtractor={(item, index) => item.id}
+/>
+```
+
+### Challenges
+- Structuring the component tree and passing props correctly
+- Forgetting to reset the input field after adding a goal
+- Reusing styling in multiple components in a consistent way
+  
+### Solutions
+- Reviewed how props work and practiced prop drilling
+- Used controlled input (value + onChangeText) to manage input state
+- Cleared the input after adding a goal by resetting state
+- Broke down the layout into smaller, manageable files
+  
+### Tomorrow's plan
+
+---
