@@ -35,9 +35,9 @@
 - [x] Lecture 28: Splitting Components Into Smaller Components
 - [x] Lecture 29: Utilizing Props
 - [x] Lecture 30: Working on the "Goal Input" Component
-- [ ] Lecture 31: Handling Taps with the Pressable Component
-- [ ] Lecture 32: Making Items Deletable & Using IDs
-- [ ] Lecture 33: Adding an Android Ripple Effect & an iOS Alternative
+- [x] Lecture 31: Handling Taps with the Pressable Component
+- [x] Lecture 32: Making Items Deletable & Using IDs
+- [x] Lecture 33: Adding an Android Ripple Effect & an iOS Alternative
 - [ ] Lecture 34: Adding a Modal Screen
 - [ ] Lecture 35: Styling the Modal Overlay
 - [ ] Lecture 36: Opening & Closing the Modal
