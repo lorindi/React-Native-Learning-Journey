@@ -273,7 +273,7 @@ function addGoalHandler() {
 
 
 
-## Day 4 - May 18, 2025
+## Day 4 - June 18, 2025
 
 ### Today I learned
 - How to split the app into reusable components (GoalInput and GoalItem)
@@ -348,6 +348,61 @@ function GoalItem({ itemData }) {
 - Cleared the input after adding a goal by resetting state
 - Broke down the layout into smaller, manageable files
   
-### Tomorrow's plan
 
----
+
+## Day 5 - June 25, 2025
+
+### Today I learned
+- How to use the Pressable component to handle taps on items
+- How to pass down id and onDeleteItem as props from App to GoalItem
+- How to delete a goal by filtering the list using its unique ID
+- How to use .bind(this, id) to pass arguments to event handlers
+- How to enhance UX with Android ripple effect using Pressable
+- How to refactor FlatList renderItem to support deletion logic
+- The difference between View and Pressable for interactive UI elements
+- How to update component props and avoid redundant View returns
+
+### Code examples
+```javascript
+// In App.js: defines the handler and passes props
+function deleteGoalHandler(id) {
+  setCourseGoals((currentCourseGoals) => {
+    return currentCourseGoals.filter((goal) => goal.id !== id);
+  });
+}
+...
+<FlatList
+  data={courseGoals}
+  renderItem={(itemData) => (
+    <GoalItem
+      text={itemData.item.text}
+      id={itemData.item.id}
+      onDeleteItem={deleteGoalHandler}
+    />
+  )}
+  keyExtractor={(item) => item.id}
+/>
+
+```
+```
+// GoalItem component: handles taps and triggers deletion
+function GoalItem(props) {
+  return (
+    <Pressable onPress={props.onDeleteItem.bind(this, props.id)}>
+      <View style={styles.goalItem}>
+        <Text style={styles.goalText}>{props.text}</Text>
+      </View>
+    </Pressable>
+  );
+}
+```
+### Challenges
+- Remembering to pass both text and id to each GoalItem
+- Ensuring the right goal is deleted when tapped
+- Avoiding duplicate or nested return statements in FlatList
+
+### Solutions
+- Used bind to pass the correct ID to the handler
+- Replaced unused itemData props with explicit text and id
+- Cleaned up FlatList render logic for better readability and control
+
