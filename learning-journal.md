@@ -412,6 +412,7 @@ function GoalItem(props) {
 ### Today I learned
 - Adding a Modal Screen
 - Styling the Modal Overlay
+- Opening & Closing the Modal
 
 ### Code examples
 ```javascript
@@ -439,7 +440,7 @@ import { Button, StyleSheet, TextInput, View, Modal } from "react-native";
     </Modal>
 ```
 
-```
+```javascript
  <View style={styles.buttonContainer}>
     <View style={styles.button}>
       <Button title="Add Goal" onPress={addGoalHandler} />
@@ -460,6 +461,43 @@ import { Button, StyleSheet, TextInput, View, Modal } from "react-native";
   },
 
 ```
+```javascript
+// App.js
+  function startAddGoalHandler() {
+    setModalIsVisible(true);
+  }
+
+  function endAddGoalHandler() {
+    setModalIsVisible(false);
+  }
+   endAddGoalHandler();
+
+    <Button
+        title="Add New Goal"
+        color="#5e0acc"
+        onPress={startAddGoalHandler}
+      />
+    <GoalInput
+      visible={modalIsVisible}
+      onAddGoal={addGoalHandler}
+      onCancel={endAddGoalHandler}
+    />
+    // GoalInput.js
+    <Button title="Cancel" onPress={props.onCancel} />
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Day 6 - June 26, 2025
 

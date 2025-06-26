@@ -40,7 +40,7 @@
 - [x] Lecture 33: Adding an Android Ripple Effect & an iOS Alternative
 - [x] Lecture 34: Adding a Modal Screen
 - [x] Lecture 35: Styling the Modal Overlay
-- [ ] Lecture 36: Opening & Closing the Modal
+- [x] Lecture 36: Opening & Closing the Modal
 - [ ] Lecture 37: Working with Images & Changing Colors
 - [ ] Lecture 38: App Finishing Touches
 - [ ] Lecture 39: Module Summary
