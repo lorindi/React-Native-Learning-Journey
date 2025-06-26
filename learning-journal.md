@@ -411,6 +411,7 @@ function GoalItem(props) {
 
 ### Today I learned
 - Adding a Modal Screen
+- Styling the Modal Overlay
 
 ### Code examples
 ```javascript
@@ -436,6 +437,28 @@ import { Button, StyleSheet, TextInput, View, Modal } from "react-native";
         <Button title="Add Goal" onPress={addGoalHandler} />
       </View>
     </Modal>
+```
+
+```
+ <View style={styles.buttonContainer}>
+    <View style={styles.button}>
+      <Button title="Add Goal" onPress={addGoalHandler} />
+    </View>
+    <View style={styles.button}>
+      <Button title="Cancel" onPress={addGoalHandler} />
+    </View>
+  </View>
+
+
+  buttonContainer: {
+  marginTop: 16,
+  flexDirection: "row",
+  },
+  button: {
+    width: "30%",
+    marginHorizontal: 8,
+  },
+
 ```
 
 ## Day 6 - June 26, 2025
