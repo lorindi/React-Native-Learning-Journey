@@ -43,7 +43,7 @@
 - [x] Lecture 36: Opening & Closing the Modal
 - [x] Lecture 37: Working with Images & Changing Colors
 - [x] Lecture 38: App Finishing Touches
-- [ ] Lecture 39: Module Summary
+- [x] Lecture 39: Module Summary
 - [ ] Section 2 completed
 
 
