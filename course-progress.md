@@ -38,7 +38,7 @@
 - [x] Lecture 31: Handling Taps with the Pressable Component
 - [x] Lecture 32: Making Items Deletable & Using IDs
 - [x] Lecture 33: Adding an Android Ripple Effect & an iOS Alternative
-- [ ] Lecture 34: Adding a Modal Screen
+- [x] Lecture 34: Adding a Modal Screen
 - [ ] Lecture 35: Styling the Modal Overlay
 - [ ] Lecture 36: Opening & Closing the Modal
 - [ ] Lecture 37: Working with Images & Changing Colors

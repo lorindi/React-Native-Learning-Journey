@@ -406,3 +406,81 @@ function GoalItem(props) {
 - Replaced unused itemData props with explicit text and id
 - Cleaned up FlatList render logic for better readability and control
 
+
+## Day 6 - June 26, 2025
+
+### Today I learned
+- Adding a Modal Screen
+
+### Code examples
+```javascript
+  import { StyleSheet, View, FlatList, Button } from "react-native";
+  function startAddGoalHandler(){
+    setModalIsVisible(true)
+  }
+  <Button title="Add New Goal" color="#5e0acc" onPress = {startAddGoalHandler}
+  />
+  <GoalInput visible={modalIsVisible} onAddGoal={addGoalHandler} />
+```
+
+```javascript
+import { Button, StyleSheet, TextInput, View, Modal } from "react-native";
+ <Modal visible={props.visible} animationType="slide">
+      <View style={styles.inputContainer}>
+        <TextInput
+          style={styles.textInput}
+          placeholder="Your course goal"
+          onChangeText={goalInputHandler}
+          value={enteredGoalText}
+        />
+        <Button title="Add Goal" onPress={addGoalHandler} />
+      </View>
+    </Modal>
+```
+
+## Day 6 - June 26, 2025
+
+### Today I learned
+
+
+### Code examples
+```javascript
+
+```
+## Day 6 - June 26, 2025
+
+### Today I learned
+
+
+### Code examples
+```javascript
+
+```
+## Day 6 - June 26, 2025
+
+### Today I learned
+
+
+### Code examples
+```javascript
+
+```
+## Day 6 - June 26, 2025
+
+### Today I learned
+
+
+### Code examples
+```javascript
+
+```
+## Day 6 - June 26, 2025
+
+### Today I learned
+
+
+### Code examples
+```javascript
+
+```
+
