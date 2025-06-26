@@ -414,6 +414,7 @@ function GoalItem(props) {
 - Styling the Modal Overlay
 - Opening & Closing the Modal
 - Working with Images & Changing Colors
+- App Finishing Touches
   
 ### Code examples
 ```javascript
@@ -497,8 +498,13 @@ import { Button, StyleSheet, TextInput, View, Modal, Image } from "react-native"
   },
 ```
 
+```javascript
+import { StatusBar } from "expo-status-bar";
+ <>
+    <StatusBar style="light"/>
 
-
+    ...
+```
 
 
 
