@@ -415,7 +415,8 @@ function GoalItem(props) {
 - Opening & Closing the Modal
 - Working with Images & Changing Colors
 - App Finishing Touches
-  
+- Module Summary
+- 
 ### Code examples
 ```javascript
   import { StyleSheet, View, FlatList, Button } from "react-native";
