@@ -413,7 +413,8 @@ function GoalItem(props) {
 - Adding a Modal Screen
 - Styling the Modal Overlay
 - Opening & Closing the Modal
-
+- Working with Images & Changing Colors
+  
 ### Code examples
 ```javascript
   import { StyleSheet, View, FlatList, Button } from "react-native";
@@ -486,7 +487,15 @@ import { Button, StyleSheet, TextInput, View, Modal } from "react-native";
     <Button title="Cancel" onPress={props.onCancel} />
 ```
 
-
+```javascript
+import { Button, StyleSheet, TextInput, View, Modal, Image } from "react-native";
+  <Image style={styles.image} source={require('../assets/images/goal.png')} />
+    image: {
+    width: 100,
+    height: 100,
+    margin: 20
+  },
+```
 
 
 
