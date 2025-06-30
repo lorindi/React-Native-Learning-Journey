@@ -628,14 +628,21 @@ const styles = StyleSheet.create({
 });
 ```
 
-## Day 6 - June 26, 2025
+## Day 8 - June 30, 2025
 
 ### Today I learned
-
+- Adding Visual Feedback to the Buttons
 
 ### Code examples
 ```javascript
-
+ <View style={styles.buttonOuterContainer}>
+      <Pressable
+        style={ ({pressed}) => pressed ? [styles.pressed, styles.buttonInnerContainer] : styles.buttonInnerContainer}
+        onPress={pressHandler}
+        android_ripple={{ color: "#72063c" }} >
+        <Text style={styles.buttonText}>{children}</Text>
+      </Pressable>
+  </View>
 ```
 ## Day 6 - June 26, 2025
 

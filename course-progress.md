@@ -55,13 +55,13 @@
 
 ## Section 4: Diving Deeper into Components, Layouts & Styling - Building a Mini-Game App
 - [x] Module Introduction & What We'll Build
-- [ ] Starting Setup & Analyzing the Target App
-- [ ] Setting Up our Screen Components
-- [ ] Creating Custom Buttons
-- [ ] Styling for Android & iOS
-- [ ] Styling the "Number Input" Element
-- [ ] Configuring the TextInput Field
-- [ ] Adding Visual Feedback to the Buttons
+- [x] Starting Setup & Analyzing the Target App
+- [x] Setting Up our Screen Components
+- [x] Creating Custom Buttons
+- [x] Styling for Android & iOS
+- [x] Styling the "Number Input" Element
+- [x] Configuring the TextInput Field
+- [x] Adding Visual Feedback to the Buttons
 - [ ] Improving the Buttons
 - [ ] Coloring the Components & The Overall App
 - [ ] Adding a Linear Gradient
