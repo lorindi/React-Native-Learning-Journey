@@ -705,14 +705,6 @@ import { StyleSheet, ImageBackground } from "react-native";
 ```javascript
 // - Getting Started with the Game Logic
 
-```
-## Day 6 - June 26, 2025
-
-### Today I learned
-
-
-### Code examples
-```javascript
   const [enteredNumber, setEnteredNumber] = useState("");
 
   function numberInputHandler(enteredText) {
