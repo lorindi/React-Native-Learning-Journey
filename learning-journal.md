@@ -635,6 +635,7 @@ const styles = StyleSheet.create({
 - Improving the Buttons
 - Coloring the Components & The Overall App
 - Adding a Linear Gradient
+- Adding a Background Image
 
 ### Code examples
 ```javascript
@@ -672,10 +673,30 @@ const styles = StyleSheet.create({
 ```javascript
 // Adding a Linear Gradient
 // expo install expo-linear-gradient
+// App.js
 import { LinearGradient } from "expo-linear-gradient";
  <LinearGradient colors={["#4e0329", '#ddb52f']} style={styles.rootScreen}>
       <StartGameScreen />
   </LinearGradient>
+```
+```javascript
+// Adding a Background Image
+// App.js
+import { StyleSheet, ImageBackground } from "react-native";
+    <LinearGradient colors={["#4e0329", "#ddb52f"]} style={styles.rootScreen}>
+      <ImageBackground
+        source={require("./assets/images/dice.jpg")}
+        resizeMode="cover"
+        style={styles.rootScreen}
+        imageStyle={styles.backgroundImage}
+      >
+        <StartGameScreen />
+      </ImageBackground>
+    </LinearGradient>
+
+      backgroundImage: {
+    opacity: 0.15
+  }
 ```
 ## Day 6 - June 26, 2025
 

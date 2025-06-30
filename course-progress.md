@@ -65,7 +65,7 @@
 - [x] Improving the Buttons
 - [x] Coloring the Components & The Overall App
 - [x] Adding a Linear Gradient
-- [ ] Adding a Background Image
+- [x] Adding a Background Image
 - [ ] Getting Started with the Game Logic
 - [ ] Handling User Input & Showing an Alert Dialog
 - [ ] Switching Screens Programmatically
