@@ -62,7 +62,7 @@
 - [x] Styling the "Number Input" Element
 - [x] Configuring the TextInput Field
 - [x] Adding Visual Feedback to the Buttons
-- [ ] Improving the Buttons
+- [x] Improving the Buttons
 - [ ] Coloring the Components & The Overall App
 - [ ] Adding a Linear Gradient
 - [ ] Adding a Background Image

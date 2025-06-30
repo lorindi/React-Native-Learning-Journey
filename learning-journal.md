@@ -632,6 +632,7 @@ const styles = StyleSheet.create({
 
 ### Today I learned
 - Adding Visual Feedback to the Buttons
+- Improving the Buttons
 
 ### Code examples
 ```javascript
@@ -643,6 +644,17 @@ const styles = StyleSheet.create({
         <Text style={styles.buttonText}>{children}</Text>
       </Pressable>
   </View>
+```
+```javascript
+// StartGameScreen.js
+   <View style={styles.buttonsContainer}>
+        <View style={styles.buttonContainer}>
+          <PrimaryButton>Reset</PrimaryButton>
+        </View>
+        <View style={styles.buttonContainer}>
+          <PrimaryButton>Confirm</PrimaryButton>
+        </View>
+      </View>
 ```
 ## Day 6 - June 26, 2025
 
