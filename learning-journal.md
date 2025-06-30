@@ -639,7 +639,7 @@ const styles = StyleSheet.create({
 - Adding a Linear Gradient
 - Adding a Background Image
 - Getting Started with the Game Logic
-
+- Handling User Input & Showing an Alert Dialog
 
 ### Code examples
 ```javascript
@@ -736,6 +736,43 @@ import { StyleSheet, ImageBackground } from "react-native";
       export default function PrimaryButton({ children, onPress }) {
          onPress={onPress}
 ```
+```javascript
+// StartGameScreen.js
+// Handling User Input & Showing an Alert Dialog
+import { StyleSheet, TextInput, View, Alert } from "react-native";
+ function resetInputHandler() {
+    setEnteredNumber("");
+  }
+ const chosenNumber = parseInt(enteredNumber);
+    if (isNaN(chosenNumber) || chosenNumber <= 0 || chosenNumber > 99) {
+      Alert.alert(
+        "Invalid number!",
+        "Number has to be a number between 1 an 99.",
+        [{ text: "Okay", style: "destructive", onPress: resetInputHandler }]
+      );
+      return;
+    }
+    console.log('Valid number!');
+    
+  }
+
+  <PrimaryButton onPress={resetInputHandler}>Reset</PrimaryButton>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Day 6 - June 26, 2025
 
 ### Today I learned

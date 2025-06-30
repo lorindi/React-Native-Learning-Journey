@@ -67,7 +67,7 @@
 - [x] Adding a Linear Gradient
 - [x] Adding a Background Image
 - [x] Getting Started with the Game Logic
-- [ ] Handling User Input & Showing an Alert Dialog
+- [x] Handling User Input & Showing an Alert Dialog
 - [ ] Switching Screens Programmatically
 - [ ] Starting Work on the Game Screen
 - [ ] Respecting Device Screen Restrictions with the SafeAreaView
