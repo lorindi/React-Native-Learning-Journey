@@ -634,6 +634,7 @@ const styles = StyleSheet.create({
 - Adding Visual Feedback to the Buttons
 - Improving the Buttons
 - Coloring the Components & The Overall App
+- Adding a Linear Gradient
 
 ### Code examples
 ```javascript
@@ -658,6 +659,7 @@ const styles = StyleSheet.create({
       </View>
 ```
 ```javascript
+// Coloring the Components & The Overall App
   <View style={styles.rootScreen}>
       <StartGameScreen />
     </>
@@ -666,6 +668,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#ddb52f",
   },
+```
+```javascript
+// Adding a Linear Gradient
+// expo install expo-linear-gradient
+import { LinearGradient } from "expo-linear-gradient";
+ <LinearGradient colors={["#4e0329", '#ddb52f']} style={styles.rootScreen}>
+      <StartGameScreen />
+  </LinearGradient>
 ```
 ## Day 6 - June 26, 2025
 

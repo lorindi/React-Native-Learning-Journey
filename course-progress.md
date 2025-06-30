@@ -64,7 +64,7 @@
 - [x] Adding Visual Feedback to the Buttons
 - [x] Improving the Buttons
 - [x] Coloring the Components & The Overall App
-- [ ] Adding a Linear Gradient
+- [x] Adding a Linear Gradient
 - [ ] Adding a Background Image
 - [ ] Getting Started with the Game Logic
 - [ ] Handling User Input & Showing an Alert Dialog
