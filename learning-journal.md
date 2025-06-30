@@ -526,7 +526,9 @@ import { StatusBar } from "expo-status-bar";
 - Styling for Android & iOS
 - Styling the "Number Input" Element
 - Configuring the TextInput Field
- 
+
+
+
 ### Code examples
 ```javascript
 npm install -g react-devtools
@@ -636,6 +638,8 @@ const styles = StyleSheet.create({
 - Coloring the Components & The Overall App
 - Adding a Linear Gradient
 - Adding a Background Image
+- Getting Started with the Game Logic
+
 
 ### Code examples
 ```javascript
@@ -698,6 +702,10 @@ import { StyleSheet, ImageBackground } from "react-native";
     opacity: 0.15
   }
 ```
+```javascript
+// - Getting Started with the Game Logic
+
+```
 ## Day 6 - June 26, 2025
 
 ### Today I learned
@@ -705,7 +713,28 @@ import { StyleSheet, ImageBackground } from "react-native";
 
 ### Code examples
 ```javascript
+  const [enteredNumber, setEnteredNumber] = useState("");
 
+  function numberInputHandler(enteredText) {
+    setEnteredNumber(enteredText);
+  }
+  function confirmInputHandler() {
+
+  }
+     <View style={styles.inputContainer}>
+      <TextInput
+
+    export default function StartGameScreen() {
+        maxLength={2}
+        keyboardType="number-pad"
+        autoCorrect={false}
+        onChangeText={numberInputHandler}
+        value={enteredNumber}
+      />
+      <PrimaryButton onPress={confirmInputHandler}>Confirm</PrimaryButton>
+
+      export default function PrimaryButton({ children, onPress }) {
+         onPress={onPress}
 ```
 ## Day 6 - June 26, 2025
 
