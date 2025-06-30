@@ -633,6 +633,7 @@ const styles = StyleSheet.create({
 ### Today I learned
 - Adding Visual Feedback to the Buttons
 - Improving the Buttons
+- Coloring the Components & The Overall App
 
 ### Code examples
 ```javascript
@@ -655,6 +656,16 @@ const styles = StyleSheet.create({
           <PrimaryButton>Confirm</PrimaryButton>
         </View>
       </View>
+```
+```javascript
+  <View style={styles.rootScreen}>
+      <StartGameScreen />
+    </>
+  </View>
+  rootScreen: {
+    flex: 1,
+    backgroundColor: "#ddb52f",
+  },
 ```
 ## Day 6 - June 26, 2025
 

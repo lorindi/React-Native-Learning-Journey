@@ -63,7 +63,7 @@
 - [x] Configuring the TextInput Field
 - [x] Adding Visual Feedback to the Buttons
 - [x] Improving the Buttons
-- [ ] Coloring the Components & The Overall App
+- [x] Coloring the Components & The Overall App
 - [ ] Adding a Linear Gradient
 - [ ] Adding a Background Image
 - [ ] Getting Started with the Game Logic
