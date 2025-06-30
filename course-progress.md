@@ -44,7 +44,48 @@
 - [x] Lecture 37: Working with Images & Changing Colors
 - [x] Lecture 38: App Finishing Touches
 - [x] Lecture 39: Module Summary
-- [ ] Section 2 completed
 
+## Section 3: Debugging React Native Apps (Introduction)
+- [x] Module Introduction
+- [x] Handling Errors
+- [x] Logging to the Console
+- [x] Debugging JavaScript Remotely
+- [x] Using the React DevTools
+- [x] Using the Documentation
 
+## Section 4: Diving Deeper into Components, Layouts & Styling - Building a Mini-Game App
+- [x] Module Introduction & What We'll Build
+- [ ] Starting Setup & Analyzing the Target App
+- [ ] Setting Up our Screen Components
+- [ ] Creating Custom Buttons
+- [ ] Styling for Android & iOS
+- [ ] Styling the "Number Input" Element
+- [ ] Configuring the TextInput Field
+- [ ] Adding Visual Feedback to the Buttons
+- [ ] Improving the Buttons
+- [ ] Coloring the Components & The Overall App
+- [ ] Adding a Linear Gradient
+- [ ] Adding a Background Image
+- [ ] Getting Started with the Game Logic
+- [ ] Handling User Input & Showing an Alert Dialog
+- [ ] Switching Screens Programmatically
+- [ ] Starting Work on the Game Screen
+- [ ] Respecting Device Screen Restrictions with the SafeAreaView
+- [ ] Creating a Title Component
+- [ ] Managing Colors Globally
+ing Random Numbers
+- [ ] Adding Game Control Buttons ("+" & "-") to the App
+- [ ] Checking for "Game Over"
+- [ ] Improving the Game Screen Visuals
+- [ ] Using "Cascading Styles"
+- [ ] Working with Icons (Button Icons)
+- [ ] Adding & Using Custom Fonts with React Native Apps
+- [ ] Adding a (Foreground) Image
+- [ ] Using & Styling Nested Text
+ing a Summary Screen
+- [ ] Logging Game Rounds
+- [ ] Outputting Log Data with FlatList
+- [ ] Styling the Game Round Logs
+- [ ] Finishing Touches
+- [ ] Module Summary
 

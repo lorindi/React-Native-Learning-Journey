@@ -510,20 +510,124 @@ import { StatusBar } from "expo-status-bar";
 
 
 
-
-
-
-
-
-## Day 6 - June 26, 2025
+## Day 7 - June 27, 2025
 
 ### Today I learned
-
-
+- Module Introduction
+- Handling Errors
+- Logging to the Console
+- Debugging JavaScript Remotely
+- Using the React DevTools
+- Using the Documentation
+- Module Introduction & What We'll Build
+- Starting Setup & Analyzing the Target App
+- Setting Up our Screen Components
+- Creating Custom Buttons
+- Styling for Android & iOS
+- Styling the "Number Input" Element
+- Configuring the TextInput Field
+ 
 ### Code examples
 ```javascript
-
+npm install -g react-devtools
+Start devtools:react-devtools
 ```
+```javascript
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import StartGameScreen from "./screens/StartGameScreen";
+
+export default function App() {
+  return (
+    <>
+      <StartGameScreen />
+    </>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+
+  },
+});
+```
+```javascript
+import { Pressable, StyleSheet, Text, View } from "react-native";
+
+export default function PrimaryButton({ children }) {
+  function pressHandler() {
+    console.log('Pressed!');
+    
+  }
+  return (
+    <Pressable onPress={pressHandler}>
+      <View style={styles.container}>
+        <Text>{children}</Text>
+      </View>
+    </Pressable>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+     backgroundColor: "#4e0329",
+    borderRadius: 28,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    elevation: 2
+  },
+});
+```
+```javascript
+import { StyleSheet, TextInput, View } from "react-native";
+import PrimaryButton from "../components/PrimaryButton";
+
+export default function StartGameScreen() {
+  return (
+    <View style={styles.inputContainer}>
+      <TextInput
+        style={styles.numberInput}
+        maxLength={2}
+        keyboardType="number-pad"
+        autoCorrect={false}
+      />
+      <PrimaryButton>Reset</PrimaryButton>
+      <PrimaryButton>Confirm</PrimaryButton>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  inputContainer: {
+    marginTop: 100,
+    marginHorizontal: 24,
+    padding: 16,
+    backgroundColor: "#72063c",
+    borderRadius: 8,
+
+    //Android
+    elevation: 4,
+
+    // IOS
+    shadowColor: "black",
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 6,
+    shadowOpacity: 0.25,
+  },
+  numberInput: {
+    height: 50,
+    width: 50,
+    fontSize: 32,
+    borderBottomColor: "#ddb52f",
+    borderBottomWidth: 2,
+    color: "#ddb52f",
+    marginVertical: 8,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+});
+```
+
 ## Day 6 - June 26, 2025
 
 ### Today I learned
