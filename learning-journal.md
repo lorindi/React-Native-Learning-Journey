@@ -752,28 +752,38 @@ import { StyleSheet, TextInput, View, Alert } from "react-native";
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Day 6 - June 26, 2025
+## Day 9 - July 1, 2025
 
 ### Today I learned
-
+- Switching Screens Programmatically
 
 ### Code examples
 ```javascript
+// Switching Screens Programmatically
+import { useState } from "react";
+import GameScreen from "./screens/GameScreen";
+  const [userNumber, setUserNumber] = useState();
 
+  function pickedNumberHandler(pickedNumber) {
+    setUserNumber(pickedNumber);
+  }
+  let screen = <StartGameScreen  onPickNumber={pickedNumberHandler}/>
+
+  if (userNumber) {
+    screen = <GameScreen />
+  }
+
+   {screen}
+        {/* <StartGameScreen /> */}
+
+  export default function StartGameScreen({ onPickNumber }) {
+    onPickNumber(chosenNumber);
 ```
+
+
+
+
+
 ## Day 6 - June 26, 2025
 
 ### Today I learned

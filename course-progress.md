@@ -68,7 +68,7 @@
 - [x] Adding a Background Image
 - [x] Getting Started with the Game Logic
 - [x] Handling User Input & Showing an Alert Dialog
-- [ ] Switching Screens Programmatically
+- [x] Switching Screens Programmatically
 - [ ] Starting Work on the Game Screen
 - [ ] Respecting Device Screen Restrictions with the SafeAreaView
 - [ ] Creating a Title Component
