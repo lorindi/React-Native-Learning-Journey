@@ -757,6 +757,8 @@ import { StyleSheet, TextInput, View, Alert } from "react-native";
 ### Today I learned
 - Switching Screens Programmatically
 - Starting Work on the Game Screen
+- Respecting Device Screen Restrictions with the SafeAreaView
+
 
 ### Code examples
 ```javascript
@@ -811,7 +813,11 @@ const styles = StyleSheet.create({
   }
 });
 ```
-
+```javascript
+// Respecting Device Screen Restrictions with the SafeAreaView
+import { SafeAreaView } from "react-native";
+<SafeAreaView style={styles.rootScreen}>{screen}</SafeAreaView>
+```
 
 
 

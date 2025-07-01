@@ -70,7 +70,7 @@
 - [x] Handling User Input & Showing an Alert Dialog
 - [x] Switching Screens Programmatically
 - [x] Starting Work on the Game Screen
-- [ ] Respecting Device Screen Restrictions with the SafeAreaView
+- [x] Respecting Device Screen Restrictions with the SafeAreaView
 - [ ] Creating a Title Component
 - [ ] Managing Colors Globally
 ing Random Numbers
