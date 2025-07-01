@@ -69,7 +69,7 @@
 - [x] Getting Started with the Game Logic
 - [x] Handling User Input & Showing an Alert Dialog
 - [x] Switching Screens Programmatically
-- [ ] Starting Work on the Game Screen
+- [x] Starting Work on the Game Screen
 - [ ] Respecting Device Screen Restrictions with the SafeAreaView
 - [ ] Creating a Title Component
 - [ ] Managing Colors Globally
