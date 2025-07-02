@@ -72,7 +72,7 @@
 - [x] Starting Work on the Game Screen
 - [x] Respecting Device Screen Restrictions with the SafeAreaView
 - [x] Creating a Title Component
-- [ ] Managing Colors Globally
+- [x] Managing Colors Globally
 ing Random Numbers
 - [ ] Adding Game Control Buttons ("+" & "-") to the App
 - [ ] Checking for "Game Over"

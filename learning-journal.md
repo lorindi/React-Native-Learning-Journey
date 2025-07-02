@@ -759,6 +759,7 @@ import { StyleSheet, TextInput, View, Alert } from "react-native";
 - Starting Work on the Game Screen
 - Respecting Device Screen Restrictions with the SafeAreaView
 - Creating a Title Component
+- Managing Colors Globally
 
 ### Code examples
 ```javascript
@@ -820,10 +821,10 @@ import { SafeAreaView } from "react-native";
 ```
 ```javascript
 // Creating a Title Component
-import { Text } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
-function Title({title}) {
-  return <Text style={styles.title}>{title}</Text>;
+function Title({children}) {
+  return <Text style={styles.title}>{children}</Text>;
 }
 
 export default Title;
@@ -843,22 +844,36 @@ const styles = StyleSheet.create({
 
 ```
 ```javascript
+// Managing Colors Globally
+const Colors = {
+  primary500: "#72063c",
+  primary600: "#640233",
+  primary800: "#3b021f",
+  primary700: "#4e0329",
+  accent500: "#ddb52f",
+};
+export default Colors;
 
+import Colors from "../constants/colors";
+
+ backgroundColor: "#3b021f",
+backgroundColor: Colors.primary800,
 ```
-```javascript
-
-```
-```javascript
-
-```
 
 
-## Day 6 - June 26, 2025
+
+## Day 10 - July 2, 2025
 
 ### Today I learned
 
 
 ### Code examples
+```javascript
+
+```
+```javascript
+
+```
 ```javascript
 
 ```
