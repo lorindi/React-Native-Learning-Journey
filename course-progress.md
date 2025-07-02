@@ -75,7 +75,7 @@
 - [x] Managing Colors Globally
 - [x] Creating, Using & Displaying Random Numbers
 - [x] Adding Game Control Buttons ("+" & "-") to the App
-- [ ] Checking for "Game Over"
+- [x] Checking for "Game Over"
 - [ ] Improving the Game Screen Visuals
 - [ ] Using "Cascading Styles"
 - [ ] Working with Icons (Button Icons)
