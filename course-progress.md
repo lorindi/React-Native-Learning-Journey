@@ -74,7 +74,7 @@
 - [x] Creating a Title Component
 - [x] Managing Colors Globally
 - [x] Creating, Using & Displaying Random Numbers
-- [] Adding Game Control Buttons ("+" & "-") to the App
+- [x] Adding Game Control Buttons ("+" & "-") to the App
 - [ ] Checking for "Game Over"
 - [ ] Improving the Game Screen Visuals
 - [ ] Using "Cascading Styles"

@@ -912,10 +912,5 @@ const styles = StyleSheet.create({
   }
 }
 ```
-```javascript
 
-```
-```javascript
-
-```
 
