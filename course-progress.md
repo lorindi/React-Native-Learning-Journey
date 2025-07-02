@@ -73,8 +73,8 @@
 - [x] Respecting Device Screen Restrictions with the SafeAreaView
 - [x] Creating a Title Component
 - [x] Managing Colors Globally
-ing Random Numbers
-- [ ] Adding Game Control Buttons ("+" & "-") to the App
+- [x] Creating, Using & Displaying Random Numbers
+- [] Adding Game Control Buttons ("+" & "-") to the App
 - [ ] Checking for "Game Over"
 - [ ] Improving the Game Screen Visuals
 - [ ] Using "Cascading Styles"
@@ -82,7 +82,7 @@ ing Random Numbers
 - [ ] Adding & Using Custom Fonts with React Native Apps
 - [ ] Adding a (Foreground) Image
 - [ ] Using & Styling Nested Text
-ing a Summary Screen
+- [ ] Adding Logic to (Re-)Start Games & Displaying a Summary Screen
 - [ ] Logging Game Rounds
 - [ ] Outputting Log Data with FlatList
 - [ ] Styling the Game Round Logs

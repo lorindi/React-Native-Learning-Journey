@@ -865,11 +865,52 @@ backgroundColor: Colors.primary800,
 ## Day 10 - July 2, 2025
 
 ### Today I learned
-
+- Creating, Using & Displaying Random Numbers
+- Adding Game Control Buttons ("+" & "-") to the App
 
 ### Code examples
 ```javascript
+// Creating, Using & Displaying Random Numbers
+// NumberContainer.js
 
+import { StyleSheet, Text, View } from "react-native";
+import Colors from "../../constants/colors";
+
+function NumberContainer({ children }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.numberText}>{children}</Text>
+    </View>
+  );
+}
+
+export default NumberContainer;
+
+const styles = StyleSheet.create({
+  container: {
+    borderWidth: 4,
+    borderColor: Colors.accent500,
+    padding: 24,
+    margin: 24,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  numberText: {
+    color: Colors.accent500,
+    fontSize: 36,
+    fontWeight: 'bold'
+  },
+});
+
+  const rndNum = Math.floor(Math.random() * (max - min) + min);
+
+  if (rndNum === exclude) {
+    return generateRandomBetween(min, max, exclude);
+  } else {
+    return rndNum;
+  }
+}
 ```
 ```javascript
 
